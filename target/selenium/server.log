@@ -1,0 +1,18 @@
+20:12:28,212 INFO  [org.openqa.selenium.server.SeleniumServer] Java: Apple Inc. 20.65-b04-462
+20:12:28,213 INFO  [org.openqa.selenium.server.SeleniumServer] OS: Mac OS X 10.9.1 x86_64
+20:12:28,220 INFO  [org.openqa.selenium.server.SeleniumServer] v2.21.0, with Core v2.21.0. Built from revision 16551
+20:12:28,321 INFO  [org.openqa.selenium.server.SeleniumServer] RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+20:12:28,322 INFO  [org.openqa.jetty.http.HttpServer] Version Jetty/5.1.x
+20:12:28,322 INFO  [org.openqa.jetty.util.Container] Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+20:12:28,323 INFO  [org.openqa.jetty.util.Container] Started HttpContext[/selenium-server,/selenium-server]
+20:12:28,323 INFO  [org.openqa.jetty.util.Container] Started HttpContext[/,/]
+20:12:28,363 INFO  [org.openqa.jetty.util.Container] Started org.openqa.jetty.jetty.servlet.ServletHandler@6564dbd5
+20:12:28,363 INFO  [org.openqa.jetty.util.Container] Started HttpContext[/wd,/wd]
+20:12:28,370 INFO  [org.openqa.jetty.http.SocketListener] Started SocketListener on 0.0.0.0:4444
+20:12:28,370 INFO  [org.openqa.jetty.util.Container] Started org.openqa.jetty.jetty.Server@4720d62b
+20:12:28.782 INFO - Checking Resource aliases
+20:12:29,099 INFO  [org.openqa.jetty.util.Credential] Checking Resource aliases
+20:12:29.101 INFO - Command request: shutDownSeleniumServer[, ] on session null
+20:12:29.102 INFO - Shutdown command received
+20:12:29.103 INFO - initiating shutdown
+20:12:29.103 INFO - Got result: OK on session null
