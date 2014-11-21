@@ -1,4 +1,0 @@
-Command to run : mvn -P smoke test
-
-Instructions :
-

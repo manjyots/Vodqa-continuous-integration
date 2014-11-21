@@ -1,0 +1,31 @@
+Instructions :
+
+1) Install Java 1.6 and set PATH
+ - Set JAVA_HOME i.e. C:\Program Files\Java\jdk1.6.0_45
+ - Append C:\Program Files\Java\jdk1.6.0_45\bin to Path variable
+ - Verify version using command : Java -version
+ - Run javac
+
+2) Install maven
+ - Append <PATH_TILL_MAVEN_BIN_DIRECTORY> in PATH variable.
+ - Set M2_HOME with <PATH_TILL_MAVEN_BIN_DIRECTORY> value.
+ - Verify version using command : mvn -version
+
+3) Install GIT
+ - Append <PATH_TILL_GIT_BIN_DIRECTORY> in PATH variable.
+ - Verify version using command : git --version
+
+4) Now, clone git repo using command :
+ - git clone https://github.com/manjyots/Vodqa-continuous-integration.git
+
+5) Run command  : mvn -P smoke test
+Above command will resolve the dependencies and execute the test.
+
+ Project Structure :
+
+ src
+   | - test
+   |     | - java
+   |     | - resources
+   |
+ pom.xml
