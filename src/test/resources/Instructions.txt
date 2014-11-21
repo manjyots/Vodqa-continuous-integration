@@ -18,7 +18,7 @@ Instructions :
 4) Now, clone git repo using command :
  - git clone https://github.com/manjyots/Vodqa-continuous-integration.git
 
-5) Run command  : mvn -P smoke test
+5) Run command  : mvn -P smoke -Dbrowser="firefox" test
 Above command will resolve the dependencies and execute the test.
 
  Project Structure :

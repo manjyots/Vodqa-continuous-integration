@@ -19,8 +19,14 @@ import static com.thoughtworks.selenium.SeleneseTestBase.assertTrue;
 public class SeleniumTest {
 
     @Test
-        public void testing() {
-            WebDriver driver = new FirefoxDriver();
+    public void testing() {
+        WebDriver driver = null;
+        String browser = System.getProperty("browser");
+        if (browser.equals("firefox")) {
+            driver = new FirefoxDriver();
+            System.out.println("*******************************Browser  found*********************************");
+        } else
+            System.out.println("**********************************Browser not found********************************");
             driver.manage().timeouts().implicitlyWait(1000, TimeUnit.MILLISECONDS);
             driver.get("http://selenium-tester.herokuapp.com/users");
             driver.findElement(By.linkText("New User")).click();
@@ -48,5 +54,5 @@ public class SeleniumTest {
             regPage.register();
             driver.quit();
 
-}
     }
+}
