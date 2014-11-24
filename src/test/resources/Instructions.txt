@@ -1,4 +1,4 @@
-Instructions :
+ ***** Instructions *****
 
 1) Install Java 1.6 and set PATH
  - Set JAVA_HOME i.e. C:\Program Files\Java\jdk1.6.0_45
@@ -6,12 +6,12 @@ Instructions :
  - Verify version using command : Java -version
  - Run javac
 
-2) Install maven
+2) Install maven : Apache Maven 3.2.3
  - Append <PATH_TILL_MAVEN_BIN_DIRECTORY> in PATH variable.
  - Set M2_HOME with <PATH_TILL_MAVEN_BIN_DIRECTORY> value.
  - Verify version using command : mvn -version
 
-3) Install GIT
+3) Install GIT : git version 1.9.4.msysgit.2
  - Append <PATH_TILL_GIT_BIN_DIRECTORY> in PATH variable.
  - Verify version using command : git --version
 
@@ -21,7 +21,7 @@ Instructions :
 5) Run command  : mvn -P smoke -Dbrowser="firefox" test
 Above command will resolve the dependencies and execute the test.
 
- Project Structure :
+ ***** Project Structure *****
 
  src
    | - test
@@ -29,3 +29,6 @@ Above command will resolve the dependencies and execute the test.
    |     | - resources
    |
  pom.xml
+
+ ***** Selenium Version *****
+  2.43.0
