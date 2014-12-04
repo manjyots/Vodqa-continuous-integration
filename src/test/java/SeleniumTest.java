@@ -2,6 +2,7 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.Test;
 import pages.*;
 
@@ -25,8 +26,14 @@ public class SeleniumTest {
         String browser = System.getProperty("browser");
         if (browser.equals("firefox")) {
             driver = new FirefoxDriver();
-            System.out.println("*******************************Browser  found*********************************");
-        } else
+            System.out.println("*******************************Browser  found - firefox*********************************");
+        }
+        else if(browser.equals("ie")) {
+            driver = new InternetExplorerDriver();
+            System.out.println("*******************************Browser  found - internet exp*********************************");
+        }
+            else
+
             System.out.println("**********************************Browser not found********************************");
             driver.manage().timeouts().implicitlyWait(1000, TimeUnit.MILLISECONDS);
             driver.get("http://selenium-tester.herokuapp.com/users");
